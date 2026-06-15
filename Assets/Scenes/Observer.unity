@@ -474,6 +474,50 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &1225296675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225296677}
+  - component: {fileID: 1225296676}
+  m_Layer: 0
+  m_Name: CommandInvoker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1225296676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225296675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 983a34581fcf34943b2663278c3d2bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CommandInvoker
+--- !u!4 &1225296677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225296675}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1756934638
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +805,7 @@ GameObject:
   - component: {fileID: 2058181785}
   - component: {fileID: 2058181784}
   - component: {fileID: 2058181788}
+  - component: {fileID: 2058181789}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -873,6 +918,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 043c35f59b33738409b329acb30e0e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+--- !u!114 &2058181789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058181783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091389bb7a47a3c4b8b316b818fc8861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CommandTest
+  _commandInvoker: {fileID: 1225296676}
+  _transform: {fileID: 2058181787}
+  _offset: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -883,3 +943,4 @@ SceneRoots:
   - {fileID: 398553575}
   - {fileID: 2058181787}
   - {fileID: 98505517}
+  - {fileID: 1225296677}

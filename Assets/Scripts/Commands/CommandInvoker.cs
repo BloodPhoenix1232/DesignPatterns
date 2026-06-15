@@ -13,7 +13,7 @@ public class CommandInvoker : MonoBehaviour
 
     public void Undo()
     {
-        if(_commands.Count == 0)
+        if (_commands.Count == 0)
         {
             return;
         }

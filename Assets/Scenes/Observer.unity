@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a7d85e17b4b94db2fe8a35068aba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinDisplay
-  _playerCoins: {fileID: 2058181788}
+  _walletReference: {fileID: 2058181788}
   _coinText: {fileID: 2005610433}
 --- !u!4 &98505517
 Transform:

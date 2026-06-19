@@ -1,14 +1,14 @@
-using System;
 using UnityEngine;
 
 namespace Combined
 {
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] private Wall _wall;
+        [SerializeField] private Wall _wallReference;
         [SerializeField] private int _damage;
         [SerializeField] private CommandInvoker _commandInvoker;
 
+        private IWall _wall;
         public static GameManager Instance { get; private set; }
 
         void Awake()
@@ -21,6 +21,7 @@ namespace Combined
 
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            _wall = _wallReference;
         }
 
         public void RegisterHit()

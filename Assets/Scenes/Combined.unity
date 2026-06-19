@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e44aaf0342d0d4187a3c9061a28263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Combined.GameManager
-  _wall: {fileID: 1153571631}
+  _wallReference: {fileID: 1153571631}
   _damage: 2
   _commandInvoker: {fileID: 130141775}
 --- !u!4 &723365397

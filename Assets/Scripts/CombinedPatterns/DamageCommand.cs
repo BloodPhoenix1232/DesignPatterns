@@ -2,10 +2,10 @@ namespace Combined
 {
     public class DamageCommand : ICommand
     {
-        private Wall _wall;
+        private IWall _wall;
         private int _damage;
 
-        public DamageCommand(Wall wall, int damage)
+        public DamageCommand(IWall wall, int damage)
         {
             _wall = wall;
             _damage = damage;

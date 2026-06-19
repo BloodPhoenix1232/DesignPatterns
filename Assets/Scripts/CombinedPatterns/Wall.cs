@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Combined 
 {
-    public class Wall : MonoBehaviour
+    public class Wall : MonoBehaviour, IWall
     {
         [SerializeField] private int _health;
 

@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Zenject;
 
 namespace Combined 
 {
     public class ProjectileLauncher : MonoBehaviour
     {
+        [Inject] private GameManager _gameManager;
+
         [SerializeField] private ProjectileFactory _factory;
 
         void Update()
@@ -29,7 +32,7 @@ namespace Combined
 
             if (Keyboard.current.zKey.wasPressedThisFrame)
             {
-                GameManager.Instance.Undo();
+                _gameManager.Undo();
             }
         }
     }

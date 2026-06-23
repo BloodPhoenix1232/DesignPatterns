@@ -9,18 +9,9 @@ namespace Combined
         [SerializeField] private CommandInvoker _commandInvoker;
 
         private IWall _wall;
-        public static GameManager Instance { get; private set; }
 
-        void Awake()
+        private void Awake()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
             _wall = _wallReference;
         }
 

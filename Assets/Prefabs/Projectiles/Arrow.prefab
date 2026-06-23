@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cb3b8038e42e14a8e7c73972c5bbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Combined.Arrow
+  _gameEvent: {fileID: 11400000, guid: b3e792f1d1e8dbc4aaa7726599c7c904, type: 2}
 --- !u!54 &8432193517081123582
 Rigidbody:
   m_ObjectHideFlags: 0

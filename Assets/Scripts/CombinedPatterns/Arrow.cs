@@ -1,12 +1,15 @@
 using UnityEngine;
+using Zenject;
 
 namespace Combined
 {
     public class Arrow : MonoBehaviour, IProjectile
     {
+        [Inject] private GameManager _gameManager;
+
         public void OnHit()
         {
-            GameManager.Instance.RegisterHit();
+            _gameManager.RegisterHit();
             Destroy(gameObject);
         }
 

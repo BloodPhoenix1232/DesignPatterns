@@ -4,9 +4,11 @@ namespace Combined
 {
     public class Fireball : MonoBehaviour, IProjectile
     {
+        [SerializeField] private GameEvent _gameEvent;
+
         public void OnHit()
         {
-            GameManager.Instance.RegisterHit();
+            _gameEvent.Raise();
             Destroy(gameObject);
         }
 
